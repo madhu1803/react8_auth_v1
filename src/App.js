@@ -5,6 +5,7 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import "./App.css";
 import { Login, Dashboard, Page404 } from "./pages";
 import { AuthenticatedRoute, NonAuthenticatedRoute } from "./helpers/routes";
 export default class App extends Component {
