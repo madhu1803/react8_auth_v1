@@ -6,12 +6,8 @@ export default class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
+          <Route path="/login" component={Login} />
+          <Route path="/dashboard" component={Dashboard} />
         </Switch>
       </Router>
     );
