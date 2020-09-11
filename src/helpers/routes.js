@@ -1,6 +1,7 @@
 import { Redirect, Route } from "react-router-dom";
 import React from "react";
 
+// protected route will not allow the user to access the page unless hes logged in
 export const AuthenticatedRoute = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
@@ -19,6 +20,7 @@ export const AuthenticatedRoute = ({ component: Component, ...rest }) => (
   />
 );
 
+// non protected route like a login page will only be allowed to access if the user is logged out
 export const NonAuthenticatedRoute = ({ component: Component, ...rest }) => (
   <Route
     {...rest}
