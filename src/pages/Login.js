@@ -40,6 +40,7 @@ export default class Login extends Component {
       .catch((error) => {
         if (error.response.status === 400 || error.response.status === 403) {
           alert("error");
+          console.log(error.response);
           this.setState({
             ...this.state,
             errors: {
