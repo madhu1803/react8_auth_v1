@@ -23,10 +23,6 @@ export default class Dashboard extends Component {
       })
       .catch((error) => {
         console.log(error);
-        localStorage.removeItem("auth_key");
-        if (window.location.pathname !== "/login") {
-          window.location.reload();
-        }
       });
   }
   render() {
